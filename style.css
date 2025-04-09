@@ -27,7 +27,10 @@ header {
   display: flex; /*elementos en fila*/
   align-items: center; /*alineacion*/
   gap: 50px; /*espacio entre imagen y texto*/
+  justify-content: space-between;
+  flex-wrap: wrap;
     }
+        
   /*formato navegacion*/
 .nav ul {
   list-style: none; /*elimina las viñetas*/
@@ -175,8 +178,17 @@ a:hover {
   .nav li {
     margin-bottom: 10px;
    }
-  .header {
+  .header-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px; /* espacio más pequeño en móviles */
+    text-align: center;
   }
+  .tituloprincipal {
+    font-size: 2.5em; /* reduce el tamaño del título en móviles */
+    text-align: center;
   }
+
+  }
+
+  
